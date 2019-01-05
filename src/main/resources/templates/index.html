@@ -8,9 +8,11 @@
 		<title>Signin Template for Bootstrap</title>
 		<!-- Bootstrap core CSS -->
 		<!--<link th:href="@{/asserts/css/bootstrap.min.css}" rel="stylesheet"/>-->
-		<link th:href="@{/webjars/bootstrap/4.2.1/css/bootstrap.min.css}">
+		<!-- Bootstrap core CSS -->
+		<link href="asserts/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/4.2.1/css/bootstrap.css}" rel="stylesheet">
+
 		<!-- Custom styles for this template -->
-		<link th:href="@{/asserts/css/signin.css}" rel="stylesheet"/>
+		<link href="asserts/css/dashboard.css" th:href="@{/asserts/css/dashboard.css}" rel="stylesheet">
 	</head>
 	<body class="text-center">
 		<form class="form-signin" th:action="@{/user/login}" th:method="post">
