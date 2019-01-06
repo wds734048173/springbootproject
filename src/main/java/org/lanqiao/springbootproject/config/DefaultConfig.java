@@ -25,10 +25,10 @@ public class DefaultConfig implements WebMvcConfigurer {
         registry.addViewController("/index.html").setViewName("index");
     }
 
-    /*@Override
+    @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/**").excludePathPatterns("/index.html","/user/login","/main.html","/");
-    }*/
+    }
 
     @Override
     public void addFormatters(FormatterRegistry registry) {
